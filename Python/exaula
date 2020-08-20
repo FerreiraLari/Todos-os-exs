@@ -1,0 +1,4 @@
+python
+with open('cad', 'w') as arquivo:
+nome = input("Digite o nome: ")
+writeFile.write(nome + '\n')
