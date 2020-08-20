@@ -1,0 +1,20 @@
+#!/bin/bash
+
+
+
+echo "Digite um número inteiro"
+  read MAXCOUNT
+echo "Digite um nome pro arquivo"
+  read "nome"
+count=1
+
+
+
+
+while [ "$count" -le $MAXCOUNT ]      # Generate 10 ($MAXCOUNT) random integers.
+do
+  number=$RANDOM
+  echo $number >> "$nome"
+  let "count += 1"  # Increment count.
+done
+

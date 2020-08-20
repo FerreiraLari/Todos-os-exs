@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Digite um numero"
+  read num1
+ echo "Digite outro numero"
+  read num2
+echo "Digite outro numero"
+  read num3
+
+if [ $num1 -eq $num2 ] && [ $num1 -eq $num3 ]
+then
+echo "O triângulo é equilátero"
+elif [ $num1 -ne $num2 ] && [ $num1 -ne $num3 ] && [ $num2 -ne $num3 ]
+then
+echo "O triângulo é escaleno"
+else
+echo "O triângulo é isóceles"
+fi

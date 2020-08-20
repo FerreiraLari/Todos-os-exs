@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Digite um número inteiro"
+  read num1
+ echo "Digite outro número inteiro"
+  read num2
+
+soma=$[num1+num2]
+ echo "a soma é:" $soma
+dif=$[num1-num2]
+ echo "a diferença é:" $dif
+pro=$[num1*num2]
+ echo "o produto é:" $pro
+quo=$[num1/num2]
+ echo "o quociente é:" $quo
+res=$[num1%num2]
+ echo "o resto é:" $res

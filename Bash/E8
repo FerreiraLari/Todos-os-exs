@@ -1,0 +1,17 @@
+#!/bin/bash
+
+count=0;
+total=0; 
+
+for i in $( awk '{ print $1; }' file )
+   do 
+     total=$(echo $total+$i | bc )
+     ((count++))
+   done
+echo "A média é:"
+echo "scale=2; $total / $count" | bc
+echo "O desvio padrão é:"
+awk '{sum+=$1; sumsq+=$1*$1} END {print sqrt(sumsq/NR - (sum/NR)^2)}' file
+echo "A mediana é:"
+sort -n file | awk 'NF{a[NR]=$1;c++}END{print (c%2==0)?((a[c/2]+a[c/2+1])/2):a[c/2+1]}'
+
