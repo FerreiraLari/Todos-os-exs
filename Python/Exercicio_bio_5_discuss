@@ -1,0 +1,22 @@
+LOBO
+A média de dados faltantes por coluna é: 202.5 de 1620 linhas - 12,5%
+ONÇA
+A média de dados faltantes por coluna é: 82.6470588235294 de 795 linhas - 10,4%
+CAPIVARA
+A média de dados faltantes por coluna é: 218.7941176470588 de 1111 linhas - 19,69%
+
+Média de dados faltantes por coluna das bases analisadas é 14,2%
+
+A partir do resultado trazido pela funcionalidade implementada no exercício 1, pode-se observar a partir das bases analisadas - são estas as das espécies lobo, onça e capivara - que a quantidade de dados faltantes por coluna esteve entre 10,4% e 19,7%, tais quantidades podem ser consideradas expresivas e dependendo da forma como se pretende utilizar os dados pode prejudicar a análise ou até mesmo inviabilizá-la, visto que dados faltantes são um problema para o reconhecimento de padrões, para a tomada de decisão e também para a aplicação de vários métodos estatísticos.
+
+LOBO
+Registros Validados com Estado: 1595 do total de 1620 - não há correspondência 1,54%
+Registros Validados com Estado e Cidade: 989 do total de 1620 - há correspondência 61,05%
+ONÇA
+Registros Validados com Estado: 774 do total de 795 - não há correspondência 2,64%
+Registros Validados com Estado e Cidade: 230 do total de 795 - há correspondência 28,93%
+CAPIVARA
+Registros Validados com Estado: 1110 do total de 1111 - não há correspondência 0,09%
+Registros Validados com Estado e Cidade: 422 do total de 1111 - há correspondência 37,98%
+
+Nota-se a partir dos resultados obtidos através da implementação da funcionalidade do exercício 4, que para maior parte dos dados a latitude e longitude corresponde com o UF do estado, apenas para cerca de 1,42% dos dados (em média) não há correspondência. Porém ao nível de município o cenário é bem diferente, apenas cerca de 42,65% dos dados (em média) tiveram correspondência entre a latitude-longitude e estado e cidade, isso se deve principalmente ao não preenchimento da variável município que apresenta uma grande quantidade de células sem informações.
